@@ -32,9 +32,11 @@ type Server struct {
 
 func (s *Server) AddBlock(ctx context.Context, in *proto.AddBlockRequest) (*proto.AddBlockResponse, error) {
 	block := s.Blockchain.AddBlock(in.Data)
+	log.Printf("added Block %s ", block.Hash)
 	return &proto.AddBlockResponse{
 		Hash: block.Hash,
 	}, nil
+
 }
 
 func (s *Server) GetBlockchain(ctx context.Context, in *proto.GetBlockchainRequest) (*proto.GetBlockchainResponse, error) {
