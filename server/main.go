@@ -7,8 +7,8 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/plutov/packagemain/00-grpc/proto"
-	"github.com/plutov/packagemain/00-grpc/server/blockchain"
+	"github.com/Legun/gRPC/proto"
+	"github.com/Legun/gRPC/server/blockchain"
 	"google.golang.org/grpc"
 )
 

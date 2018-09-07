@@ -7,7 +7,7 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/plutov/packagemain/00-grpc/proto"
+	"github.com/Legun/gRPC/proto"
 	"google.golang.org/grpc"
 )
 
